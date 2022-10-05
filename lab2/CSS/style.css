@@ -1,0 +1,108 @@
+@IMPORT URL("https://fonts.google.com/?category=Display");
+
+
+img{
+    height: 450px;
+    width: 600px;
+}
+
+*{
+    font-family:'Bebas Neue';
+}
+
+.main-part{
+    display: flex;
+}
+
+
+
+.menu{
+    display: flex;
+    padding: 5px;
+    font-size:270%;
+    justify-content: space-between;
+    background-color: #242323;
+    color: #ffff;
+}
+
+.obj-info{
+    padding: 10px;
+}
+
+.obj-info p{
+    
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.obj-info p a{
+    color:#242323;
+}
+
+.main-info{
+    padding: 10px;
+    border-left: 4px solid #242323;
+}
+
+.menu h3{
+    color: #f0ac45;
+}
+
+h1{
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+ul li{
+    padding: 0 30px;
+    margin: 0 30px;
+}
+
+ul li a{
+    transition: all ease .4s;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+}
+
+ul li a:hover{
+    color: #f0ac45;
+}
+
+.main-info section h2{
+    font-size: 30px;
+}
+
+.main-info section p{
+    font-size: 30px;
+}
+
+.main-info section .button{
+    background-color: black;
+    height: 80px;
+    width: 300px;
+}
+
+.main-info section .button a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 62px 10px;
+}
+
+.main-info section{
+    padding-bottom: 60px;
+}
+
+.main-info section ol li{
+    font-size: 30px;
+}
