@@ -7,9 +7,10 @@ header{
 }
 
 .menu{
+    height: 100px;
     display: flex;
     padding: 5px;
-    font-size:270%;
+    font-size:150%;
     justify-content: space-between;
     background-color: #242323;
     color: #ffff;
@@ -21,7 +22,7 @@ header{
 
 a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 ul{
@@ -39,12 +40,11 @@ ul li a{
     transition: all ease .4s;
     text-decoration: none;
     color: #fff;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 ul li a img{
-    height: 70px;
-    width: 110px;
+    height: 40px;
 }
 
 ul li a:hover{
@@ -72,41 +72,134 @@ ul li a:hover{
 
 .main-part{
     display: flex;
-    margin-top: 190px;
+    margin-top: 110px;
 }
 
 .obj-info img{
-    height: 450px;
-    width: 600px;
+    height: 225px;
+    width: 300px;
 }
 
 .vl{
     border-left: 4px solid black;
 }
 
+.menu .counter{
+    color: #242323;
+}
 
 .main-part section {
     border: 2px solid black;
-    max-width: 500px;
-    max-height: 450px;
-    margin: 20px;
+    max-width: 270px;
+    max-height: 305px;
+    margin: 10px;
     justify-content: center;
+    font-weight: 900;
 }
 
 .main-part section .btn{
     margin: 0 auto;
-    height: 60px;
-    width: 310px;
-    background-color: #242323;
+    height: 50px;
+    width: 190px;
+    border-radius: 10px;
 }
 
 .main-part section .btn a{
-    color: #fff;
-    left: 30;
-    margin: 10px 30px 10px;
-    
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin: auto;
 }
 
 .main-part section div p{
     text-align: center;
+}
+
+section{
+    display: flex;
+}
+
+section div .button{
+    margin: 0px 0px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 190px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0px 10px gray;
+}
+section div .button:hover{
+    background-color: #242323;
+}
+
+section div .button:active{
+    background-color: #686868;
+    box-shadow: 0 10px rgb(87, 87, 87);
+    transform: translateY(4px);
+    padding-top: 7px;
+}
+
+section div img{
+    height: 175px;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup_body{
+    padding: 10px 10px 25px 10px;
+    background-color: #fff;
+    max-width: 400px;
+    height: fit-content;
+    position: relative;
+}
+
+.popup_content{
+    min-height: 100%;
+    margin: 20px 10px;
+    justify-content: space-between;
+}
+
+.popup_title{
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+.popup_counter{
+    margin-bottom: 1vh;
+    margin-left: 5vh;
+    left: 50%;
+}
+
+.popup_button{
+    margin-top: 10px;
+    position: absolute;
+    bottom: 7px;
+    margin-bottom: 10px;
+}
+
+.popup_close{
+    position: absolute;
+    right: 10px;
+}
+
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+form{
+    display: flex;
 }

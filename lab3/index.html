@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/stle.css">
+    <script src="./js/main.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="menu">
             <h3>Spardata</h3>
+            <p class="counter" id="verba_counter">0</з>
+            <p class="counter" id="bastion_counter">0</p>
+            <p class="counter" id="vilha_counter">0</p>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Categories</a></li>
+                <li><a href="#popup">Categories</a></li>
                 <li><a href="#">Contacts</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="#"><img src="./img/shopping-cart-icon.png" alt="asdasd"></a></li>
+                <li><a href="#" onclick="return show()"><img src="./img/shopping-cart-icon.png" alt="asdasd"></a></li>
             </ul>
         </div>
     </header>
-    
+
     <div class="main-part">
         <div class="obj-info">
             <aside>
@@ -34,12 +40,12 @@
         <div class="vl"></div>
         <section>
             <div>
-                <img src="./img/Bastion.jpg" alt="bast">
-                <p><a href="#">Бастіон-01</a></p>
+                <img src="./img/Verba2.jpg" alt="bast">
+                <p><a href="#">Верба</a></p>
                 <div class="btn">
-                    <br>
-                    <a href="#">Пожертвувати на...</a></div>
-            
+                    <a href="#popup" class="button" onclick="return verba()"> Пожертвувати на...</a>
+                </div>
+
             </div>
         </section>
         <section>
@@ -47,25 +53,37 @@
                 <img src="./img/Bastion.jpg" alt="bast">
                 <p><a href="#">Бастіон-01</a></p>
                 <div class="btn">
-                    <br>
-                    <a href="#">Пожертвувати на...</a></div>
-            
+                    <a href="#popup" class="button" onclick="return bastion()"> Пожертвувати на...</a>
+                </div>
+
             </div>
         </section>
         <section>
             <div>
-                <img src="./img/Bastion.jpg" alt="bast">
-                <p><a href="#">Бастіон-01</a></p>
+                <img src="./img/Vilha.jpg" alt="bast">
+                <p><a href="#">Вільха</a></p>
                 <div class="btn">
-                    <br>
-                    <a href="#">Пожертвувати на...</a></div>
-            
+                    <a href="#popup" class="button" onclick="return vilha()"> Пожертвувати на...</a>
+                </div>
             </div>
         </section>
-        
+        <div id="popup" class="popup">
+            <div class="popup_body">
+                <div class="popup_close"><a href="#">X</a></div>
+                <div class="popup_content">
+                    <div class="popup_title">Пожертвування на ЗСУ</div>
+                    <form action="#" name="myForm" onsubmit="return validateForm()">
+                        <input type="number" name="formInfo" class="popup_counter" id="">
+                        <button class="popup_button">Відправити</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
 
 
 
     </div>
 </body>
+
 </html>
